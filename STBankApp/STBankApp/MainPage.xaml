@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="STBankApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:STBankApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Height="35" Grid.Row="0" Background="DeepPink">
+            <TextBlock x:Name="titleApp" Text="" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="7" FontSize="15"/>
+        </StackPanel>
+        <StackPanel Height="30" Grid.Row="2" VerticalAlignment="Bottom" Background="DeepPink">
+            <TextBlock Text="STBank © 2019" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="5" FontSize="15"/>
+        </StackPanel>
+        <FontIcon Tapped="FontIcon_Tapped" Tag="Logout" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10 30 0 50" Grid.Row="2" FontSize="25" FontFamily="segoe mdl2 assets" Glyph="&#xE7E8;"/>
+            <SplitView Grid.Row="1" PaneBackground="White" x:Name="splitview" IsPaneOpen="True"
+           DisplayMode="Inline"
+           OpenPaneLength="180">
+            <SplitView.Pane>
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Margin="10 10 0 0" Orientation="Horizontal" Tapped="StackPanel_Tapped" Tag="Home">
+                        <FontIcon FontSize="25" FontFamily="segoe mdl2 assets" Glyph="&#xE10F;"/>
+                        <TextBlock FontSize="20" Text="Trang Chủ" Margin="10 0 0 0"/>
+                    </StackPanel>
+                    <StackPanel Margin="10 10 0 0" Orientation="Horizontal" Tapped="StackPanel_Tapped" Tag="Account">
+                        <FontIcon FontSize="25" FontFamily="segoe mdl2 assets" Glyph="&#xE13D;"/>
+                        <TextBlock FontSize="20" Text="Tài Khoản" Margin="10 0 0 0"/>
+                    </StackPanel>
+                    <StackPanel Margin="10 10 0 0" Orientation="Horizontal" Tapped="StackPanel_Tapped" Tag="Transfers">
+                        <FontIcon FontSize="25" FontFamily="segoe mdl2 assets" Glyph="&#xE13C;"/>
+                        <TextBlock FontSize="20" Text="Chuyển Tiền" Margin="10 0 0 0"/>
+                    </StackPanel>
+                    <StackPanel Margin="10 10 0 0" Orientation="Horizontal" Tapped="StackPanel_Tapped" Tag="History">
+                        <FontIcon FontSize="25" FontFamily="segoe mdl2 assets" Glyph="&#xE121;"/>
+                        <TextBlock FontSize="20" Text="Lịch Sử" Margin="10 0 0 0"/>
+                    </StackPanel>
+                </StackPanel>
+            </SplitView.Pane>
+
+            <Grid>
+                <Frame x:Name="MainFrame"/>
+            </Grid>
+        </SplitView>
+    </Grid>
+</Page>

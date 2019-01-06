@@ -1,0 +1,88 @@
+﻿<Page
+    x:Class="STBankApp.History"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:STBankApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Margin="12" Orientation="Vertical">
+            <StackPanel Orientation="Vertical" Margin="0 0 0 20">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Ngày Giao Dịch: "/>
+                    <TextBlock Text="24/02/1999"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Số Tài Khoản: "/>
+                    <TextBlock Text="12345622"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Thay Đổi: "/>
+                    <TextBlock Text="Nhận"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Số Tiền: "/>
+                    <TextBlock Text="123456767"/>
+                    <TextBlock FontWeight="500" Margin="5 0 0 0" Text="VND"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Lời Nhắn: "/>
+                    <TextBlock Text="chuyen tien an sang"/>
+                </StackPanel>
+            </StackPanel>
+            
+            
+            
+            <StackPanel Orientation="Vertical" Margin="0 0 0 20">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Ngày Giao Dịch: "/>
+                    <TextBlock Text="24/02/1999"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Số Tài Khoản: "/>
+                    <TextBlock Text="12345622"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Thay Đổi: "/>
+                    <TextBlock Text="Nhận"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Số Tiền: "/>
+                    <TextBlock Text="123456767"/>
+                    <TextBlock FontWeight="500" Margin="5 0 0 0" Text="VND"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Lời Nhắn: "/>
+                    <TextBlock Text="chuyen tien an sang"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0 0 0 0">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Ngày Giao Dịch: "/>
+                    <TextBlock Text="24/02/1999"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Số Tài Khoản: "/>
+                    <TextBlock Text="12345622"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Thay Đổi: "/>
+                    <TextBlock Text="Chuyển"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Số Tiền: "/>
+                    <TextBlock Text="123456767"/>
+                    <TextBlock FontWeight="500" Margin="5 0 0 0" Text="VND"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 5 0" FontWeight="500" Text="Lời Nhắn: "/>
+                    <TextBlock Text="chuyen tien an trua"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
